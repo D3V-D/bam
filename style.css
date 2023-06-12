@@ -3,7 +3,7 @@
 }
 
 @keyframes textGrow {
-  0 { font-size: 0.1rem; }
+  from { font-size: 0.1rem; }
   90% { font-size: 3rem; }
-  100% { font-size: 2.5rem; }
+  to { font-size: 2.5rem; }
 }
