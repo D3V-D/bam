@@ -1,0 +1,9 @@
+#bam {
+  animation: textGrow 2s;
+}
+
+@keyframes textGrow {
+  0 { font-size: 0.1rem; }
+  90% { font-size: 3rem; }
+  100% { font-size: 2.5rem; }
+}
