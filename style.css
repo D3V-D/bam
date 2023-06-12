@@ -1,10 +1,10 @@
 #bam {
-  animation: textGrow 1s;
+  animation: textGrow 0.7s;
   animation-fill-mode: forwards;
 }
 
 @keyframes textGrow {
   from { font-size: 0.1rem; }
-  95% { font-size: 30rem; }
+  85% { font-size: 30rem; }
   to { font-size: 25rem; }
 }
