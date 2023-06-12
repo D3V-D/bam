@@ -1,5 +1,6 @@
 #bam {
   animation: textGrow 2s;
+  animation-fill-mode: forwards;
 }
 
 @keyframes textGrow {
