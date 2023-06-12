@@ -5,6 +5,6 @@
 
 @keyframes textGrow {
   from { font-size: 0.1rem; }
-  90% { font-size: 35rem; }
-  to { font-size: 15rem; }
+  95% { font-size: 30rem; }
+  to { font-size: 25rem; }
 }
