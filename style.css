@@ -8,3 +8,27 @@
   85% { font-size: 30rem; }
   to { font-size: 25rem; }
 }
+
+#sub1 {
+  animation: fadein1 2s forwards;
+}
+
+#sub2 {
+  animation: fadein2 2s forwards;
+}
+
+#sub3 {
+  animation: fadein3 2s forwards;
+}
+
+@keyframes fadein1 {
+  from {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%; 
+  }
+}
