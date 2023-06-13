@@ -25,6 +25,7 @@
 
 .spacer {
   width: 50px;
+  display: inline-block;
 }
 
 @keyframes fadein1 {
