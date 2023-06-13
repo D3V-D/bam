@@ -16,11 +16,11 @@
 }
 
 #sub2 {
-  animation: fadein2 2s forwards;
+  animation: fadein2 4s forwards;
 }
 
 #sub3 {
-  animation: fadein3 2s forwards;
+  animation: fadein3 6s forwards;
 }
 
 .spacer {
@@ -32,6 +32,30 @@
     opacity: 0;
   }
   50% {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%; 
+  }
+}
+
+@keyframes fadein2 {
+  from {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%; 
+  }
+}
+
+@keyframes fadein3 {
+  from {
+    opacity: 0;
+  }
+  83% {
     opacity: 0;
   }
   to {
