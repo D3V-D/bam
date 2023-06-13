@@ -16,11 +16,11 @@
 }
 
 #sub2 {
-  animation: fadein2 4s forwards;
+  animation: fadein2 3s forwards;
 }
 
 #sub3 {
-  animation: fadein3 6s forwards;
+  animation: fadein3 4s forwards;
 }
 
 .spacer {
@@ -43,7 +43,7 @@
   from {
     opacity: 0;
   }
-  75% {
+  67% {
     opacity: 0;
   }
   to {
@@ -55,7 +55,7 @@
   from {
     opacity: 0;
   }
-  83% {
+  75% {
     opacity: 0;
   }
   to {
