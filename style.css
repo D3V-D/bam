@@ -7,8 +7,8 @@
 
 @keyframes textGrow {
   from { font-size: 0.1rem; }
-  85% { font-size: 30rem; }
-  to { font-size: 25rem; }
+  95% { font-size: 30rem; }
+  to { font-size: 28rem; }
 }
 
 #sub1 {
