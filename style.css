@@ -1,6 +1,8 @@
 #bam {
   animation: textGrow 0.7s;
   animation-fill-mode: forwards;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @keyframes textGrow {
@@ -19,6 +21,10 @@
 
 #sub3 {
   animation: fadein3 2s forwards;
+}
+
+.spacer {
+  width: 50px;
 }
 
 @keyframes fadein1 {
