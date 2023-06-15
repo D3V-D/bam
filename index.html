@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <HTML>
   <head>
     <title>
@@ -9,7 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet"> 
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/title.css">
+    <link rel="stylesheet" href="css/intro.css">
   </head>
  
   <body>
@@ -17,7 +21,7 @@
     <nav id="topNav">
       <ul id="navLinks">
         <!-- Can maybe change to words -->
-        <a class="jumplink" href="#titlesection"><li class="linkItem">
+        <a class="jumplink" href="#"><li class="linkItem">
           1
         </li></a>
         <li>
@@ -29,7 +33,7 @@
         <li>
           <span class="linkSpacer"></span>
         </li>
-        <a class="jumplink" href="#"><li class="linkItem">
+        <a class="jumplink" href="#definitions"><li class="linkItem">
           3
         </li></a>
       </ul>
@@ -45,11 +49,62 @@
       </div> 
     </header>
 
+    <div style="background: linear-gradient(black, white); height: 5vh;"></div>
+
     <section id="intro">
-      <h2>So...</h2>
+      <div id="phraseContainer">
+        <div class="phrase">
+          <div class="word">
+            <div class="letter hidden">S</div>
+            <div class="letter hidden">o</div>
+            <div class="letter hidden">.</div>
+            <div class="letter hidden">.</div>
+            <div class="letter hidden">.</div>
+          </div>
+        </div>
+        <div class="phrase">
+          <div class="word">
+            <div class="letter hidden">W</div>
+            <div class="letter hidden">h</div>
+            <div class="letter hidden">a</div>
+            <div class="letter hidden">t</div>
+            <div class="letter hidden">&nbsp;</div>
+          </div>
+          <div class="word">
+            <div class="letter hidden" style="font-weight: 800;">I</div>
+            <div class="letter hidden" style="font-weight: 800;">S</div>
+            <div class="letter hidden">.</div>
+            <div class="letter hidden">.</div>
+            <div class="letter hidden">.</div>
+          </div>
+        </div>
+        <div class="phrase">
+          <div class="word">
+            <div class="letter hidden">M</div>
+            <div class="letter hidden">i</div>
+            <div class="letter hidden">s</div>
+            <div class="letter hidden">i</div>
+            <div class="letter hidden">n</div>
+            <div class="letter hidden">f</div>
+            <div class="letter hidden">o</div>
+            <div class="letter hidden">r</div>
+            <div class="letter hidden">m</div>
+            <div class="letter hidden">a</div> 
+            <div class="letter hidden">t</div>
+            <div class="letter hidden">i</div>
+            <div class="letter hidden">o</div>
+            <div class="letter hidden">n</div>
+            <div class="letter hidden">?</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <script src="index.js"></script>
+    <section id="definitions">
+      
+    </section>
+
+    <script src="js/scrollAndNav.js"></script>
   </body>
 </HTML>
 
