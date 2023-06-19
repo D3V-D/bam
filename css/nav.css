@@ -15,7 +15,7 @@
     opacity: 0;
     align-items: center;
     animation: fadein 2s ease-in-out forwards;
-    animation-delay: 3s;
+    animation-delay: 1s;
   }
   
   .linkSpacer {

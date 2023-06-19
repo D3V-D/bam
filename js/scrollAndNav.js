@@ -59,6 +59,10 @@ window.onscroll = function (e) {
         switchNavColors(1);
     }
 
+    if (window.scrollY >= (window.innerHeight * 6.6)) {
+        switchNavColors(1);
+    }
+
     previousY = window.scrollY;
 }
 
