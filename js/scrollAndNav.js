@@ -75,6 +75,7 @@ function showNav() {
     navbar.style.animation = "slideNavIn 0.4s ease-in-out forwards";
 }
 
+// 1 is white text black background
 let hoverColorMode = 1;
 function switchNavColors(x) {
     const linkItems = document.getElementsByClassName("linkItem")
