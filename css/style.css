@@ -11,6 +11,17 @@ html {
 body {
     overflow-x: hidden;
 }
+
+.text-link {
+    color: white;
+    text-underline-offset: 3px;
+}
+
+.text-link:hover {
+    color: rgb(190, 190, 190);
+    text-underline-offset: 0;
+    cursor: help;
+}
   
 /** wave **/
 .custom-shape-divider-bottom-1687199849 {
@@ -34,24 +45,22 @@ body {
     fill: #FFFFFF;
 }
 
-.custom-shape-divider-top-1687200416 {
+.custom-shape-divider-bottom-1687300675 {
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
 }
 
-.custom-shape-divider-top-1687200416 svg {
+.custom-shape-divider-bottom-1687300675 svg {
     position: relative;
     display: block;
-    width: calc(100% + 1.3px);
-    height: 79px;
-    transform: rotateY(180deg);
+    width: calc(128% + 1.3px);
+    height: 63px;
 }
 
-.custom-shape-divider-top-1687200416 .shape-fill {
-    fill: #FFFFFF;
+.custom-shape-divider-bottom-1687300675 .shape-fill {
+    fill: #000000;
 }
