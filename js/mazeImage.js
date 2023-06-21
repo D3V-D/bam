@@ -18,7 +18,7 @@ while (numBlocks > 0) {
     
     unusedNumbers.splice(randomIndex, 1) // remove 1 item only
 
-    let imageURL = "'./img/mazeImgs/newsimage"+imageNum+".jpeg'"
+    let imageURL = "'./public/mazeImgs/newsimage"+imageNum+".jpeg'"
 
     console.log(blocks[numBlocks])
 
