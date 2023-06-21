@@ -112,7 +112,9 @@
 .maze-block {
     width: var(--var-maze-block-size);
     height: var(--var-maze-block-size);
-    border: 1px solid blue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .maze-empty {
