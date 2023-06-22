@@ -6,6 +6,12 @@
     position: relative;
 }
 
+@media (orientation: portrait) {
+    #intro {
+        height: 6000px;
+    }
+}
+
 #phraseContainer {
     width: 100vw;
     height: 100vh;

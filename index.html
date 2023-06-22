@@ -12,7 +12,7 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://thebam.netlify.app/">
     <meta property="og:description" content="The Battle Against Misinformation. What to know about misinformation and disinformation, made simple.">
-    <meta property="og:image" content="https://thebam.netlify.app/img/thumb.png">  
+    <meta property="og:image" content="https://thebam.netlify.app/public/thumb.png">  
     <!--Compatibility stuff-->
     <meta charset="utf-8">
     <!-- Fonts -->
@@ -25,9 +25,24 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/definitions.css">
+
+    <link rel="stylesheet" href="css/collisions.css">
   </head>
  
   <body>
+
+    <nav class="hamburger-menu">
+      <input id="menutoggle" type="checkbox" />
+      <label class="menubtn" for="menutoggle">
+        <span></span>
+      </label>
+
+      <ul class="menubox">
+          <li><a class="menuitem" href="#">Title</a></li>
+          <li><a class="menuitem" href="#definitions">Definitions</a></li>
+      </ul>
+    </nav>
+
 
     <header id="titlesection">
       <h1 id="bam">BAM</h1>
@@ -98,21 +113,22 @@
       </div>
     </section>
 
-    <section id="definitions">
+    <main>
+      <section id="definitions">
       <div id="def-text-container">
-        <div class="definition">
+        <article class="definition">
           <h2>Misinformation</h2>
           <p>
             Misinformation is when facts are mixed-up, changed, or even made up, then spread, sometimes on purpose and sometimes accidentally. This can happen through rumors, bullying, or just by sharing incorrect information. It's similar to playing a game of <a class="text-link" href="https://www.wikihow.com/Play-the-Telephone-Game" target="_blank">telephone</a>, where you whisper words in each other's ears, and they can get misheard, changed, or forgotten as they go from person to person.
           </p>
-        </div>
+        </article>
         <br>
-        <div class="definition">
+        <article class="definition">
           <h2>Disinformation</h2>
           <p>
             Disinformation, unlike misinformation, is a lie made on purpose to trick people. This could be for many reasons, such as scams, hoaxes, or political agendas (goals). Disinformation can be carried out on a small scale or on a larger scale, but some of the most damaging false information online is created by disinformation attacks run by governments or people with a desire to spread chaos.
           </p>
-        </div>
+        </article>
       </div>
       <div id="def-maze-container">
         <div class="maze-block">
@@ -333,7 +349,8 @@
         </div>
         <span id="maze-subtitle">Maze of Information</span>
       </div>
-    </section>
+      </section>
+    </main>
 
     <script src="js/scrollText.js"></script>
     <script src="js/game.js"></script>
