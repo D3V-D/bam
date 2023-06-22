@@ -1,0 +1,80 @@
+  .hamburger-menu {
+    z-index: 2;
+    position: fixed;
+  }
+
+  #menutoggle {
+    opacity: 0;
+  }
+  #menutoggle:checked + .menubtn > span {
+    transform: rotate(45deg);
+  }
+  #menutoggle:checked + .menubtn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+  #menutoggle:checked + .menubtn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menutoggle:checked ~ .menubox {
+    right: 0 !important;
+  }
+  .menubtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 36px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menubtn > span,
+  .menubtn > span::before,
+  .menubtn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #616161;
+    transition-duration: .25s;
+  }
+  .menubtn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menubtn > span::after {
+    content: '';
+    top: 8px;
+  }
+  .menubox {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-color: #ECEFF1;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+  }
+  .menuitem {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+    text-align: center;
+  }
+  .menuitem:hover {
+    background-color: #292828;
+    color: white;
+    padding-left: 60px;
+    text-shadow: #616161 -2px 2px;
+  }
