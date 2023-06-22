@@ -20,8 +20,6 @@ while (numBlocks > 0) {
 
     let imageURL = "'./public/mazeImgs/newsimage"+imageNum+".jpeg'"
 
-    console.log(blocks[numBlocks])
-
     blocks[numBlocks].style.backgroundImage = "url(" + imageURL + ")"
 }
 // background-image: url("../img/mazeImgs/newsImage##.jpeg")

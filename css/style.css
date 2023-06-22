@@ -12,6 +12,10 @@ body {
     overflow-x: hidden;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
 .text-link {
     color: white;
     text-underline-offset: 3px;

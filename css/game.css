@@ -1,0 +1,23 @@
+:root {
+    --var-snake-size: 3vw;
+}
+
+@media (max-width: 1100px) {
+    :root {
+        --var-snake-size: 6vw;
+    }
+}
+
+#snake {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#snake img {
+    width: var(--var-snake-size);
+    height: var(--var-snake-size);
+}
