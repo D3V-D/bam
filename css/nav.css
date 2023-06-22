@@ -29,6 +29,14 @@
     cursor: pointer;
     z-index: 2;
   }
+
+  @media (orientation: portrait) {
+    .menubtn {
+      top: 40px;
+      right: 40px;
+    }
+  }
+
   .menubtn > span,
   .menubtn > span::before,
   .menubtn > span::after {
