@@ -1,8 +1,8 @@
 //change as needed
-const numOfTorrentImages = 40;
+const numOfTorrentImages = 99;
 for (let i = 1; i <= numOfTorrentImages; i++) {
     // loop through and create img html for each image
-    document.getElementById("torrent-container").innerHTML += "<img src='./public/mazeImgs/newsimage" + i + ".jpeg' class='torrent-image' id='torrent-image-" + i + "'>"
+    document.getElementById("torrent-container").innerHTML += "<img src='./public/torrentImgs/torrentImgs(" + i + ").jpeg' class='torrent-image' id='torrent-image-" + i + "'>"
 }
 
 const torrentContainer = document.querySelector('#torrent-container');

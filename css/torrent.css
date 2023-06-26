@@ -21,6 +21,8 @@
 
 #torrent-top-text {
     margin-bottom: 50px;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 
 #torrent-bottom-text {
@@ -30,6 +32,7 @@
 /** base image css. individually manipulated in js **/
 .torrent-image {
     position: absolute;
+    object-fit: cover;
     top: 0;
     width: 5vw;
     height: 5vw;
