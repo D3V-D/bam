@@ -1,0 +1,54 @@
+#techniques {
+    min-height: 100vh;
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(#000, #000) no-repeat center/2px 100%;
+    padding-bottom: 5vw;
+    padding-top: 100px;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#techniques a {
+    color: #333;
+    background: white;
+}
+
+#techniques a:hover {
+    color: #777;
+}
+
+#techniques h2 {
+    background: white;
+}
+
+#techniques h4 {
+    background: white;
+}
+
+#technique-container {
+    margin-top: 5vw;
+    display: grid;
+    grid-template-columns: 1fr 10vw 1fr;
+    width: 94vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+.technique {
+    height: fit-content;
+}
+
+.technique h3 {
+    font-family: "Montserrat", sans-serif;
+    text-decoration: underline;
+}
+
+.technique-filler {
+    opacity: 0;
+}
+
