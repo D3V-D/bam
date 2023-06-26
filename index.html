@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/intro.css">
     <link rel="stylesheet" href="css/definitions.css">
+    <link rel="stylesheet" href="css/torrent.css">
 
     <link rel="stylesheet" href="css/game.css">
   </head>
@@ -116,275 +117,282 @@
     <main>
       <section id="definitions">
 
-      <!--Snake is unaffected by layouts, only affected by collisions-->
-      <!-- Absolutely positioned, doesn't exist on portrait devices right now -->
-      <div id="snake">
-        <img id="snakeImg" src="public/snake/idle.png">
-        <img id="ekey" src="public/ekey.png">
-      </div>
-
-      <div id="wasd-prompt">
-        <img src="public/wasd.png">
-      </div>
-
-      <div id="quiz-0" class="quiz">
-        <div class="close-quiz" id="close-0" unselectable="on">
-          x
+        <!--Snake is unaffected by layouts, only affected by collisions-->
+        <!-- Absolutely positioned, doesn't exist on portrait devices right now -->
+        <div id="snake">
+          <img id="snakeImg" src="public/snake/idle.png">
+          <img id="ekey" src="public/ekey.png">
         </div>
-        <h2>Definitions Quiz</h2>
 
-        <div id="quiz-0-container" class="quiz-containers"></div>
-        <!-- JS TO RANDOMLY ADD 2 QUESTIONS -->
+        <div id="wasd-prompt">
+          <img src="public/wasd.png">
+        </div>
 
-      </div>
-      <div id="quiz-black-backdrop"></div>
+        <div id="quiz-0" class="quiz">
+          <div class="close-quiz" id="close-0" unselectable="on">
+            x
+          </div>
+          <h2>Definitions Quiz</h2>
 
-      <div id="def-text-container">
-        <article class="definition collision">
-          <h2>Misinformation</h2>
-          <p>
-            Misinformation is when facts are mixed-up, changed, or even made up, then spread, sometimes on purpose and sometimes accidentally. This can happen through rumors, bullying, or just by sharing incorrect information. It's similar to playing a game of <a class="text-link" href="https://www.wikihow.com/Play-the-Telephone-Game" target="_blank">telephone</a>, where you whisper words in each other's ears, and they can get misheard, changed, or forgotten as they go from person to person.
-          </p>
-        </article>
-        <br>
-        <article class="definition collision">
-          <h2>Disinformation</h2>
-          <p>
-            Disinformation, unlike misinformation, is a lie made on purpose to trick people. This could be for many reasons, such as scams, hoaxes, or political agendas (goals). Disinformation can be carried out on a small scale or on a larger scale, but some of the most damaging false information online is created by disinformation attacks run by governments or people with a desire to spread chaos.
-          </p>
-        </article>
-      </div>
+          <div id="quiz-0-container" class="quiz-containers"></div>
+          <!-- JS TO RANDOMLY ADD 2 QUESTIONS -->
+
+        </div>
+        <div id="quiz-black-backdrop"></div>
+
+        <div id="def-text-container">
+          <article class="definition collision">
+            <h2>Misinformation</h2>
+            <p>
+              Misinformation is when facts are mixed-up, changed, or even made up, then spread, sometimes on purpose and sometimes accidentally. This can happen through rumors, bullying, or just by sharing incorrect information. It's similar to playing a game of <a class="text-link" href="https://www.wikihow.com/Play-the-Telephone-Game" target="_blank">telephone</a>, where you whisper words in each other's ears, and they can get misheard, changed, or forgotten as they go from person to person.
+            </p>
+          </article>
+          <br>
+          <article class="definition collision">
+            <h2>Disinformation</h2>
+            <p>
+              Disinformation, unlike misinformation, is a lie made on purpose to trick people. This could be for many reasons, such as scams, hoaxes, or political agendas (goals). Disinformation can be carried out on a small scale or on a larger scale, but some of the most damaging false information online is created by disinformation attacks run by governments or people with a desire to spread chaos.
+            </p>
+          </article>
+        </div>
       
-      <div id="def-maze-container">
+        <div id="def-maze-container">
         <div class="maze-fillers collision"></div>
-        <div id="maze">
-          <div class="maze-block collision collision">
-            
-          </div>
-          <div class="maze-block collision collision">
-            
-          </div>
-          <div class="maze-block collision collision">
-            
-          </div>
-          <div class="maze-empty">
+          <div id="maze">
+            <div class="maze-block collision collision">
+              
+            </div>
+            <div class="maze-block collision collision">
+              
+            </div>
+            <div class="maze-block collision collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-empty quiz-block" id="quiz-block-0">
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-empty quiz-block" id="quiz-block-0">
 
-          </div>
-          <div class="maze-empty">
+            </div>
+            <div class="maze-empty">
 
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <img src="public/door/doorclosed.png" class="maze-block quiz-gate collision" id="quiz-gate-0">
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <div class="maze-block collision">
+              
+            </div>
+            <span id="maze-subtitle">Maze of Information</span>
           </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <img src="public/door/doorclosed.png" class="maze-block quiz-gate collision" id="quiz-gate-0">
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <div class="maze-block collision">
-            
-          </div>
-          <span id="maze-subtitle">Maze of Information</span>
+          <div class="maze-fillers collision"></div>
+          
         </div>
-        <div class="maze-fillers collision"></div>
-      </div>
+        <div class="custom-shape-divider-bottom-1687749101">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
       </section>
       <section id="torrent-of-info">
-        
+
       </section>
     </main>
 
     <script src="js/game.js"></script>
     <script src="js/scrollText.js"></script>
     <script src="js/mazeImage.js"></script>
+    <script src="js/torrent.js"></script>
   </body>
 </html>
 

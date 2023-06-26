@@ -166,19 +166,34 @@ function openQuiz(num) {
 
     const quizZeroQuestions = [
         {
-            question: "The answer is B.",
-            options: ["A", "B", "C", "D"],
-            answer: "B"
+            question: "Which is a better example of disinformation rather than misinformation?",
+            options: ["Political campaign", "Rumors", "Mistranslated news", "Telling your friend a joke"],
+            answer: "Political campaign"
         },
         {
-            question: "The answer is not B.",
-            options: ["A", "B", "C", "D"],
-            answer: "D"
+            question: "What game is a good example of misinformation?",
+            options: ["Telephone", "Tag", "Hide and Seek", "Tug of War"],
+            answer: "Telephone"
         },
         {
-            question: "The answer is not B or D.",
-            options: ["A", "B", "C", "D"],
-            answer: "A"
+            question: "What is a scam considered as?",
+            options: ["Misinformation", "Disinformation", "Harmless", "Information"],
+            answer: "Disinformation"
+        },
+        {
+            question: "Does misinformation have to be on purpose to be called misinformation?",
+            options: ["Yes", "No", "Depends on who it is", "Only if it is harmful"],
+            answer: "No"
+        },
+        {
+            question: "What is the difference between misinformation and disinformation?",
+            options: ["Disinformation must be on purpose, unlike misinformation.", "None", "Misinformation must be on purpose, unlike disinformation.", "Just the first letter."],
+            answer: "Disinformation must be on purpose, unlike misinformation."
+        },
+        {
+            question: "Which one of these could be an affect of disinformation?",
+            options: ["Political chaos", "The people are divided", "People are misled (tricked) and get hurt or hurt others", "All of the above"],
+            answer: "All of the above"
         }
     ]
 
@@ -194,7 +209,7 @@ function openQuiz(num) {
             + "<input type='radio' name='question" + (j+1) + "' value='" + questions[j].options[2] + "'>" + questions[j].options[2] + "<br>"
             + "<input type='radio' name='question" + (j+1) + "' value='" + questions[j].options[3] + "'>" + questions[j].options[3] + "<br>"
             + "</div>" 
-            currentQuizAnswerKey += questions[j].answer // add answer to answer key
+            currentQuizAnswerKey.push(questions[j].answer) // add answer to answer key
         }
 
         document.getElementById("quiz-0-container").innerHTML += "<button class='quiz-submit' id='quiz-0-container-submit' onclick='gradeQuiz(0)'>Submit</button>"
