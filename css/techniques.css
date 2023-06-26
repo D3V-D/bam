@@ -24,10 +24,12 @@
 
 #techniques h2 {
     background: white;
+    font-size: 3vw;
 }
 
 #techniques h4 {
     background: white;
+    font-size: 2vw;
 }
 
 #technique-container {
@@ -43,12 +45,34 @@
     height: fit-content;
 }
 
-.technique h3 {
+.technique-name {
     font-family: "Montserrat", sans-serif;
     text-decoration: underline;
+    font-size: 2vw;
+}
+
+.technique-description {
+    font-size: 1.5vw;
 }
 
 .technique-filler {
     opacity: 0;
 }
 
+@media (max-width: 1100px) {
+    #techniques h2 {
+        font-size: 4vw;
+    }
+
+    #techniques h4 {
+        font-size: 3vw;
+    }
+
+    .technique-name {
+        font-size: 3vw;
+    }
+
+    .technique-description {
+        font-size: 2.5vw;
+    }
+}
