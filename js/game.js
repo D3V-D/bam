@@ -114,7 +114,7 @@ function isCollision(additionalX, additionalY) {
 
     const viewportHeight = window.innerHeight || document.documentElement.clientHeight
 
-    if (adjustedHitbox.top > viewportHeight) {
+    if (adjustedHitbox.top + snake.offsetHeight > viewportHeight) {
         snake.style.top = snakeY
         return true;
     }
@@ -260,6 +260,8 @@ function openGate(gateNum) {
     const gate = document.getElementById("quiz-gate-" + gateNum)
     gate.removeAttribute("style")
     gate.src = 'public/door/dooropening.gif';
+    gate.style.transition = 'opacity 10s ease';
+    gate.style.opacity = '0'
     gate.classList.remove("collision")
 }
 
