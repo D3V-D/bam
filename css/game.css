@@ -4,7 +4,7 @@
 
 @media (max-width: 1100px) {
     :root {
-        --var-snake-size: 6vw;
+        --var-snake-size: 5vw;
     }
 }
 
@@ -17,7 +17,181 @@
     z-index: 1;
 }
 
-#snake img {
+#snakeImg {
     width: var(--var-snake-size);
     height: var(--var-snake-size);
+}
+
+#wasd-prompt {
+    position: absolute;
+    top: 0;
+    left: calc(var(--var-snake-size) + 0.7vw);
+    opacity: 0.4;
+}
+
+#wasd-prompt img {
+    width: calc(var(--var-snake-size) + 3vw);
+    height: calc(var(--var-snake-size) + 3vw);
+}
+
+.quiz-gate {
+    outline: none;
+    border: none;
+    background-position: center;
+    /* remove regular article image from maze */
+    background-image: url("") !important;
+}
+
+#ekey {
+    position: absolute;
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.quiz {
+    position: fixed;
+    width: 90vw;
+    height: 90vh;
+    background-color: white;
+    z-index: 9999;
+    top: 5vh;
+    left: 5vw;
+    outline: black solid 2px;
+    box-shadow: grey 4px 4px;
+    overflow-y: scroll;
+    /** controlled via js **/
+    display: none; 
+}
+
+.quiz h2 {
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    font-size: 7vw;
+}
+
+.question {
+    margin-left: 2vw;
+    font-weight: 200;
+    margin-bottom: 4vh;
+    font-size: 1.2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.question > input {
+    margin-left: 1vw;
+    transition: all 0.2s ease;
+}
+
+.question > input:hover {
+    cursor: pointer;
+}
+
+
+.close-quiz {
+    position: fixed;
+    margin-top: 0.3vw;
+    margin-left: 0.5vw;
+    width: 4vw;
+    height: 4vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4vw;
+    font-weight: 100;
+    text-shadow: 2px 2px lightgrey;
+    font-family: monospace;
+    user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+}
+
+.quiz-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.close-quiz:hover {
+    cursor: pointer;
+}
+
+.quiz-submit {
+    align-self: center;
+    background-color: white;
+    color: #222;
+    border: 1px solid #222;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    padding: 8px;
+    transition: all 0.2s ease;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    -moz-user-select: -moz-none;
+    -webkit-user-select: none;
+    box-shadow: 2px 3px #888;
+    font-weight: 300;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.quiz-submit:hover {
+    background-color: #222;
+    color: white;
+    box-shadow: none;
+}
+
+.score-bar-background {
+    width: 60vw;
+    height: 4vw;
+    border: solid 1px black;
+    box-shadow: 2px 2px lightgrey;
+    border-radius: 2px;
+    align-self: center;
+    justify-self: center;
+}
+
+.score-bar-foreground {
+    height: 100%;
+    border-radius: 2px;
+    width: 0;
+    background: lightgreen;
+    /* change background dynamically with js */
+}
+
+.score-header {
+    align-self: center;
+    justify-self: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.score-number {
+    margin-top: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+.quiz-alert {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: center;
+    justify-self: center;
+}
+
+/** filter the background darker to focus on the quiz **/
+#quiz-black-backdrop {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    background: rgba(0,0,0,0.85);
+    /** controlled by js **/
+    display: none;
 }

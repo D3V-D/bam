@@ -34,6 +34,14 @@
     .menubtn {
       top: 40px;
       right: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .menubtn > span,
+    .menubtn > span::before,
+    .menubtn > span::after {
+      height: 4px;
     }
   }
 
@@ -59,7 +67,7 @@
     display: block;
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -150%;
     width: 100vw;
     height: 100%;
     margin: 0;

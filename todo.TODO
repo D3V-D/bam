@@ -1,11 +1,8 @@
+[] once quiz is passed, open correlated gate
+[] dynamically change bar color for different scores
 [] on IOS, change body background alongside the sectional backgrounds to account for sidebars
-[] add nav
-[] add maze images
 [] add torrent of images 
-[] add snake and gameplay
 [] perhaps add position saving for snake
-[] add detection for snake being over edge
 [] on resize snake can get stuck in reformatting
-[] finetune snake movement boundaries (currently not limited downwards properly)
 [] graphical manipulation section (platformer)
 [] space section, colorful planet, not everything is black and white    

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<HTML>
+<html>
   <head>
     <title>
       BAM!
@@ -119,8 +119,25 @@
       <!--Snake is unaffected by layouts, only affected by collisions-->
       <!-- Absolutely positioned, doesn't exist on portrait devices right now -->
       <div id="snake">
-        <img src="public/snake/idle.png">
+        <img id="snakeImg" src="public/snake/idle.png">
+        <img id="ekey" src="public/ekey.png">
       </div>
+
+      <div id="wasd-prompt">
+        <img src="public/wasd.png">
+      </div>
+
+      <div id="quiz-0" class="quiz">
+        <div class="close-quiz" id="close-0" unselectable="on">
+          x
+        </div>
+        <h2>Definitions Quiz</h2>
+
+        <div id="quiz-0-container" class="quiz-containers"></div>
+        <!-- JS TO RANDOMLY ADD 2 QUESTIONS -->
+
+      </div>
+      <div id="quiz-black-backdrop"></div>
 
       <div id="def-text-container">
         <article class="definition collision">
@@ -321,7 +338,7 @@
           <div class="maze-block collision">
             
           </div>
-          <div class="maze-empty">
+          <div class="maze-empty quiz-block">
 
           </div>
           <div class="maze-empty">
@@ -345,9 +362,7 @@
           <div class="maze-block collision">
             
           </div>
-          <div class="maze-empty">
-
-          </div>
+          <img src="public/door/doorclosed.png" class="maze-block quiz-gate collision" id="quiz-gate-0">
           <div class="maze-block collision">
             
           </div>
@@ -368,5 +383,5 @@
     <script src="js/scrollText.js"></script>
     <script src="js/mazeImage.js"></script>
   </body>
-</HTML>
+</html>
 
