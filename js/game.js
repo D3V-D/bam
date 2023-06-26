@@ -296,6 +296,7 @@ function disableActions() {
 function enableActions() {
     // enable scrolling
     document.body.style.overflow = "auto";
+    document.body.style.overflowX = "hidden";
     // set variable to allow key actions
     allowKeyActions = true
 }
