@@ -2,4 +2,45 @@
     width: 100vw;
     min-height: 100vh;
     background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 1px 2px lightgrey;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+#torrent-container {
+    position: relative;
+    overflow: hidden;
+    width: 110vw;
+    height: 40vw;
+}
+
+#torrent-top-text {
+    margin-bottom: 50px;
+}
+
+#torrent-bottom-text {
+    margin-top: 50px;
+}
+
+/** base image css. individually manipulated in js **/
+.torrent-image {
+    position: absolute;
+    top: 0;
+    width: 5vw;
+    height: 5vw;
+    animation: image-flow 5s linear infinite;
+}
+
+@keyframes image-flow {
+    from {
+        left: 0;
+    }
+    to {
+        left: 100%;
+    }
 }
