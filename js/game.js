@@ -4,34 +4,14 @@ let currentQuizAnswerKey = []
 
 let allowKeyActions = true
 
-let snakeX = 500;
-let snakeY = 1376;
-
-snake.style.left = snakeX + "px"
-snake.style.top = snakeY + "px"
+let snakeX = 0;
+let snakeY = 0;
 
 let snakeSpeed = 8
 
 if (window.innerWidth < 550) {
     snakeSpeed = window.innerWidth / 100
 }
-
-
-document.getElementById("quiz-0-container").innerHTML += "" + 
-            "<div class='question'>Question 1... answer eres tu b<br>"
-            + "<input type='radio' name='answer1' value='a'>A<br>"
-            + "<input type='radio' name='answer1' value='b'>B<br>"
-            + "<input type='radio' name='answer1' value='c'>C<br>"
-            + "<input type='radio' name='q1-ans4' value='d'>D<br>"
-            + "</div>" 
-document.getElementById("quiz-0-container").innerHTML += "" + 
-            "<div class='question'>Question 2... answer eres tu a<br>"
-            + "<input type='radio' name='answer2' value='a'>A<br>"
-            + "<input type='radio' name='answer2' value='b'>B<br>"
-            + "<input type='radio' name='answer2' value='c'>C<br>"
-            + "<input type='radio' name='answer2' value='d'>D<br>"
-            + "</div>" 
-document.getElementById("quiz-0-container").innerHTML += "<button class='quiz-submit' id='quiz-0-container-submit'>Submit</button>"
 
 
 document.addEventListener('keydown', (e) => {
