@@ -1,3 +1,7 @@
+#techniques-wrapper {
+    background: white;
+}
+
 #techniques {
     min-height: 100vh;
     height: 100%;
