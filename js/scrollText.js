@@ -1,7 +1,22 @@
 //appear letters as you scroll down
 let previousY = window.scrollY;
+let currSection = document.getElementById('titlesection')
+const sections = document.querySelectorAll('section')
 
 window.onscroll = function (e) {
+    sections.forEach(section => {
+        if (section.id == 'intro') {
+            console.log(window.pageYOffset)
+            console.log(section.offsetTop)
+        }
+        if (window.pageYOffset > section.offsetTop) {
+            currSection = section
+            console.log('changed to ' + section)
+        }
+    })
+    console.log(window.getComputedStyle(currSection).backgroundColor)
+    document.body.style.background = window.getComputedStyle(currSection).backgroundColor
+
     const letters = document.getElementsByClassName("letter");
     const phrases = document.getElementsByClassName("phrase");
     let i = 1;
@@ -11,24 +26,24 @@ window.onscroll = function (e) {
         if (window.scrollY >= window.innerHeight + (150 * 5)) {
             phrases[0].classList.add("hidden");
             if (window.scrollY < window.innerHeight + (150 * (10+5))) {
-                document.getElementById("phraseContainer").style.color = "white";
-                document.getElementById("phraseContainer").style.background = "black";
+                document.getElementById("intro").style.color = "white";
+                document.getElementById("intro").style.background = "black";
             }
         } else {
             phrases[0].classList.remove("hidden");
-            document.getElementById("phraseContainer").style.color = "black";
-            document.getElementById("phraseContainer").style.background = "white";
+            document.getElementById("intro").style.color = "black";
+            document.getElementById("intro").style.background = "white";
         }
         
         // similar to previous section, but for third phrase to appear
         if (window.scrollY >= window.innerHeight + (150 * (10 + 5))) {
             phrases[1].classList.add("hidden");
-            document.getElementById("phraseContainer").style.color = "black";
-            document.getElementById("phraseContainer").style.background = "white";
+            document.getElementById("intro").style.color = "black";
+            document.getElementById("intro").style.background = "white";
         } else if (window.scrollY > window.innerHeight + (150 * 5)) {
             phrases[1].classList.remove("hidden");
-            document.getElementById("phraseContainer").style.color = "white";
-            document.getElementById("phraseContainer").style.background = "black";
+            document.getElementById("intro").style.color = "white";
+            document.getElementById("intro").style.background = "black";
         }
 
         
