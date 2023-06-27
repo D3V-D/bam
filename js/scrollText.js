@@ -1,7 +1,7 @@
 //appear letters as you scroll down
 let previousY = window.scrollY;
 let currSection = document.getElementById('titlesection')
-const sections = document.querySelectorAll('section')
+const sections = document.querySelectorAll('header, section, footer')
 
 window.onscroll = function (e) {
     sections.forEach(section => {
