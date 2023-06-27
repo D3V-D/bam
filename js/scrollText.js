@@ -5,7 +5,7 @@ const sections = document.querySelectorAll('header, section, footer')
 
 window.onscroll = function (e) {
     sections.forEach(section => {
-        if (window.pageYOffset > section.offsetTop - 50) {
+        if (window.pageYOffset > section.offsetTop - 150) {
             currSection = section
         }
     })
