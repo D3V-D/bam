@@ -1,7 +1,7 @@
 //appear letters as you scroll down
 let previousY = window.scrollY;
-window.onscroll = function (e) {
 
+window.onscroll = function (e) {
     const letters = document.getElementsByClassName("letter");
     const phrases = document.getElementsByClassName("phrase");
     let i = 1;

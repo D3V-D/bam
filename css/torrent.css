@@ -21,12 +21,14 @@
 
 #torrent-top-text {
     margin-bottom: 50px;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 #torrent-bottom-text {
     margin-top: 50px;
+    margin-left: 2vw;
+    margin-right: 2vw;
 }
 
 /** base image css. individually manipulated in js **/
