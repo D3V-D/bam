@@ -1,7 +1,5 @@
 [] add credits section
-[] try to fix phone bug where screen is not 100vw
 
-[] on IOS, change body background alongside the sectional backgrounds to account for sidebars
 [] perhaps add position saving for snake
 [] on resize snake can get stuck in reformatting
 [] graphical manipulation section (platformer)

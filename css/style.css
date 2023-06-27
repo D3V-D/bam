@@ -11,6 +11,7 @@ html {
 body {
     overflow-x: hidden;
     background: black;
+    transition: background-color 0.4s ease;
 }
 
 main {
