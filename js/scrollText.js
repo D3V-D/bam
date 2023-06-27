@@ -5,16 +5,10 @@ const sections = document.querySelectorAll('header, section, footer')
 
 window.onscroll = function (e) {
     sections.forEach(section => {
-        if (section.id == 'intro') {
-            console.log(window.pageYOffset)
-            console.log(section.offsetTop)
-        }
         if (window.pageYOffset > section.offsetTop) {
             currSection = section
-            console.log('changed to ' + section)
         }
     })
-    console.log(window.getComputedStyle(currSection).backgroundColor)
     document.body.style.background = window.getComputedStyle(currSection).backgroundColor
 
     const letters = document.getElementsByClassName("letter");
