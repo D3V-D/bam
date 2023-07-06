@@ -1,2 +1,2 @@
 # BAM!
-# The Battle Against Misinformation - Website
+## The Battle Against Misinformation - Website
