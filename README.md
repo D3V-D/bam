@@ -1,4 +1,4 @@
 # BAM!
-![BAM Image](https://github.com/](public/thumb.png)
+![BAM Image](public/thumb.png)
 ## The Battle Against Misinformation - Website
 C
